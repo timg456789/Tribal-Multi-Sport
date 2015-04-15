@@ -1,0 +1,101 @@
+#navContainer.navbar-default
+{
+	background: none;
+	border: none;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover
+{
+	background: none;
+}
+
+#mainNav
+{
+	justify-content: space-between;
+	font-weight: bold;
+}
+
+.socialIcon
+{
+	height: 25px;
+	width: 25px;
+}
+
+#topContainer
+{
+	text-align: center;
+}
+
+#navContainer
+{
+	display: inline-block;
+}
+
+.gray
+{
+	background-color: #999999;
+}
+
+.green
+{
+	background-color: #009688;
+}
+
+.lightBlue
+{
+	background-color: #02547a;
+}
+
+.darkBlue
+{
+	background-color: #071620;
+}
+
+.copyright
+{
+	font-size: .8em;
+}
+
+.button
+{
+	display: inline-block;
+}
+
+.learnMore
+{
+
+}
+
+.headerSection > h1 {
+	font-size: 4em;
+	font-weight: normal;
+	text-align: center;
+}
+
+.section > h2 {
+	margin: 0;
+}
+
+.section > h3 {
+	margin: 0;
+}
+
+.section > ul {
+	margin: 0;
+}
+
+.athlete {
+	color: white;
+	text-align: center;
+}
+
+div.athlete {
+	padding-left: 0px;
+}
+
+.athleteName {
+	font-size: 1.2em;
+	margin-bottom: 12px;
+}
