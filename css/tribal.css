@@ -1,93 +1,194 @@
-#navContainer.navbar-default
-{
+body {
+	font-family: 'Exo', sans-serif;
+}
+
+html > body  {
+	color: white;
+}
+
+/* Override bootstrap defaults. */
+body .btn:hover,
+body .btn:focus,
+body .btn.focus {
+	color: inherit;
+}
+
+body .btn:focus,
+body .btn:active:focus,
+body .btn.active:focus,
+body .btn.focus,
+body .btn:active.focus,
+body .btn.active.focus {
+	outline: none;
+}
+
+body .btn:active,
+body .btn.active {
+	outline: none;
+	webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+	margin: 0;
+}
+
+body h1 {
+	font-size: 6em;
+	padding-top: 45px;
+	font-weight: 300;
+}
+
+body h2 {
+	font-size: 3em;
+	padding-top: 30px;
+	line-height: 1.3em;
+}
+
+body h3 {
+	font-size: 1.6em;
+	font-weight: 400;
+	padding-top: 25px;
+	line-height: 1.5em;
+}
+
+.contactUs,
+.footer {
+		padding-top: 45px;
+		padding-bottom: 45px;
+}
+
+#navContainer.navbar-default {
 	background: none;
 	border: none;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover
-{
+.navbar-default .navbar-nav>.active>a:hover {
 	background: none;
 }
 
-#mainNav
-{
+#mainNav {
 	justify-content: space-between;
-	font-weight: bold;
+	margin-top: 6px;
 }
 
-.socialIcon
-{
+#mainNav > li > a:not(:first-child) {
+	margin-left: 15px;
+}
+
+#mainNav > li > a {
+	color: black;
+	font-weight: 500;
+	font-size: 1.3em;
+}
+
+.socialIcon {
 	height: 25px;
 	width: 25px;
+	margin-bottom: 2px;
 }
 
-#topContainer
-{
+.socialIcon:not(:first-child) {
+	margin-left: 6px;
+}
+
+.form-group {
+	margin-bottom: 0px;
+}
+
+.search {
+	display: inline-block;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+
+#topContainer {
 	text-align: center;
 }
 
-#navContainer
-{
+#navContainer {
 	display: inline-block;
+	margin-bottom: 5px;
 }
 
-.gray
-{
-	background-color: #999999;
-}
-
-.green
-{
+.ancientGreen {
 	background-color: #009688;
 }
 
-.lightBlue
-{
+.gray {
+	background-color: #999999;
+}
+
+.lightBlue {
+	background-color: #02577a;
+}
+
+.deepBlue {
 	background-color: #02547a;
 }
 
-.darkBlue
-{
+.darkBlue {
 	background-color: #071620;
 }
 
-.copyright
-{
-	font-size: .8em;
+.prussianBlue {
+	background-color: #013655;
 }
 
-.button
-{
+.button {
 	display: inline-block;
 }
 
-.learnMore
-{
-
+.section {
+	padding-bottom: 60px;
 }
 
-.headerSection > h1 {
-	font-size: 4em;
-	font-weight: normal;
-	text-align: center;
+.section {
+	line-height: 1.5em;
 }
 
-.section > h2 {
+.section ul {
 	margin: 0;
+	font-size: 1.5em;
+	margin-left: -15px;
+	margin-top: 20px;
 }
 
-.section > h3 {
-	margin: 0;
+.section ul > li:not(:first-child) {
+	padding-top: 12px;
 }
 
-.section > ul {
-	margin: 0;
+.trainingPlanContent,
+.oneOnOneCoachingContent,
+.groupTrainingSection {
+	margin-left: 50px;
+}
+
+.groupTrainingSection {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.additionalServices  img {
+	margin-top: 30px;
+	height: 242px;
+	width: 242px;
+	border-radius: 5px;
+}
+
+.additionalServices p {
+	font-size: 1.1em;
+	font-weight: 300;
 }
 
 .athlete {
-	color: white;
 	text-align: center;
 }
 
@@ -98,4 +199,36 @@ div.athlete {
 .athleteName {
 	font-size: 1.2em;
 	margin-bottom: 12px;
+}
+
+.contactUs {
+	font-size: 2em;
+}
+
+.contactUs > form > input{
+	margin-top: 20px;
+	font-size: .9em;
+	letter-spacing: 4px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}
+
+.headerSection,
+.additionalServices,
+.contactUs,
+.footer {
+	text-align: center;
+}
+
+.backToTop {
+	height: 50px;
+	width: 50px;
+	margin-bottom: 20px;
+}
+
+.copyright {
+	font-size: .9em;
+	font-weight: 100; /* Font gets blurry in lower sizes. */
 }
