@@ -34,6 +34,7 @@ $(function() {
 				'<li><a href="/pages/services.html">Services</a></li>' +
 				'<li><a href="/pages/athletes.html">Athletes</a></li>' +
 				'<li><a href="/pages/coaches.html">Coaches</a></li>' +
+				'<li><a href="/pages/sponsors.html">Sponsors</a></li>' +
 				'<li><a href="/pages/training-camps.html">Training Camps</a></li>' +
 				'<li><a href="/pages/contact.html">Contact</a></li>' +
 				'<li><a href="/pages/blog.html">Blog</a></li>' +

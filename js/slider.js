@@ -36,7 +36,7 @@ var athletes = [
 	},
 	{
 		imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
-		name: "athlete 8",
+		name: "8",
 		details: "qrstuv"
 	},
 	{
@@ -61,89 +61,67 @@ var athletes = [
 	}
 ];
 
-var athleteIndex = 0;
+var sliderIndex = 0;
 
-function updateAthleteSlider() {
-	$("#athleteSlider").html(
+function updateSlider() {
+	$("#slider").html(
 	
 		'<div class="row">' +
 		
 			'<div class="col-md-1"></div>'+
 			'<div class="col-md-10">' +
-				getAthleteSectionWidgetHtml() +
+				getSliderHtml() +
 			'</div>' +
 			'<div class="col-md-1"></div>'+
 
 		'</div>');	
 }
 
-function decrementAthleteIndex() {
-	var possibleIndex = athleteIndex - 6;
+function decrementSliderIndex() {
+	var possibleIndex = sliderIndex - 6;
 	
 	if (possibleIndex >= 0) {
-		athleteIndex = possibleIndex;
+		sliderIndex = possibleIndex;
 	} else {
-		athleteIndex = athletes.length - 6;
+		sliderIndexIndex = sliderData.length - 6;
 	}
 }
 
-function incrementAthleteIndex() {
-	var possibleIndex = athleteIndex + 6;
+function incrementSliderIndex() {
+	var possibleIndex = sliderIndex + 6;
 	
-	if (possibleIndex < athletes.length) {
-		athleteIndex = possibleIndex;
+	if (possibleIndex < sliderData.length) {
+		sliderIndex = possibleIndex;
 	} else {
-		athleteIndex = 0;
+		sliderIndexf = 0;
 	}
 }
 
-function validateAthleteData() {
-
-	for(var ct = 0; ct < athletes.length; ct++) {
-		if (typeof athletes[ct].imgSrc === 'undefined') {
-			alert('An athlete is missing an image.');
-		}
-		
-		if (typeof athletes[ct].name === 'undefined') {
-			alert('An athlete is a name.');
-		}
-		
-		if (typeof athletes[ct].details === 'undefined') {
-			alert('An athlete is missing a description.');
-		}
-	}
-	
-	if (athletes.length % 6 != 0) {
-		alert('Athletes must be in sets of sixes. Number of athletes: ' + athletes.length);
-	}
-	
-}
-
-function getAthleteSectionWidgetHtml() {
+function getSliderHtml() {
 	var widgetHtml;
 	
 	widgetHtml = '<div class="row">';
-	widgetHtml += getAthleteWidgetHtml(athletes[athleteIndex]);
-	widgetHtml += getAthleteWidgetHtml(athletes[athleteIndex + 1]);
-	widgetHtml += getAthleteWidgetHtml(athletes[athleteIndex + 2]);
+	widgetHtml += getSliderItemHtml(sliderData[sliderIndex]);
+	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 1]);
+	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 2]);
 	widgetHtml += '</div>';
 	
 	widgetHtml += '<div class="row">';
-	widgetHtml += getAthleteWidgetHtml(athletes[athleteIndex + 3]);
-	widgetHtml += getAthleteWidgetHtml(athletes[athleteIndex + 4]);
-	widgetHtml += getAthleteWidgetHtml(athletes[athleteIndex + 5]);
+	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 3]);
+	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 4]);
+	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 5]);
 	widgetHtml += '</div>';
 		
 	return widgetHtml;
 }
 
-function getAthleteWidgetHtml(athlete) {
+function getSliderItemHtml(sliderItemData) {
 	var widgetHtml;
 	
-	widgetHtml = '<div class="athlete col-md-3 col-md-offset-1">';
-	widgetHtml +=	'<img class="athleteImage" src="' + athlete.imgSrc + '" alt="Picture of ' + athlete.name + '" />';
-	widgetHtml +=	'<div class="athleteName">' + athlete.name + '</div>';
-	widgetHtml +=	'<div class="athleteDescription">' + athlete.details + '</div>';
+	widgetHtml = '<div class="slider col-md-3 col-md-offset-1">';
+	widgetHtml +=	'<img class="sliderImage" src="' + sliderItemData.imgSrc + '" alt="' + sliderItemData.name + '" />';
+	widgetHtml +=	'<div class="sliderName">' + sliderItemData.name + '</div>';
+	widgetHtml +=	'<div class="sliderDescription">' + sliderItemData.details + '</div>';
 	widgetHtml += '</div>';
 	
 	return widgetHtml;

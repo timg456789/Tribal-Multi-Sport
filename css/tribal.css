@@ -203,32 +203,30 @@ body h3 {
 	padding-top: 30px;
 }
 
-#athletesPage .contactUs {
+#athletesPage .contactUs,
+#sponsorsPage .contactUs {
 	background-color: #009688;;
 }
 
-#athletesPage .contactUs input {
+#athletesPage .contactUs input,
+#sponsorsPage .contactUs input {
 	background-color: #02547a;
 }
 
-#athletesPage .contactUs {
-	
-}
-
-.athlete {
+.slider {
 	text-align: center;
 }
 
-div.athlete {
+div.slider {
 	padding-left: 0px;
 }
 
-.athleteImage {
+.sliderImage {
 	width: 225px;
 	height: 225px;
 }
 
-.athleteName {
+.sliderName {
 	font-size: 1.2em;
 	margin-bottom: 12px;
 }
