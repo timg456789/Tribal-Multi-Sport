@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Old Standard TT Regular'), local('OldStandardTT-Regular'), url(http://fonts.gstatic.com/s/oldstandardtt/v7/n6RTCDcIPWSE8UNBa4k-DG75SyxP8F_Nt1CRRMel2UU.woff2) format('woff2'), url(http://fonts.gstatic.com/s/oldstandardtt/v7/n6RTCDcIPWSE8UNBa4k-DAjWwMcLosnYS7_elQHKBmA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Old Standard TT Bold'), local('OldStandardTT-Bold'), url(http://fonts.gstatic.com/s/oldstandardtt/v7/5Ywdce7XEbTSbxs__4X1_C0jGk3ScAiZpxLRtv3VAEU.woff2) format('woff2'), url(http://fonts.gstatic.com/s/oldstandardtt/v7/5Ywdce7XEbTSbxs__4X1_LHCWPYgV_Fgx41n4RSinLs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Old Standard TT Italic'), local('OldStandardTT-Italic'), url(http://fonts.gstatic.com/s/oldstandardtt/v7/QQT_AUSp4AV4dpJfIN7U5FQ6NBT6gvjJm6dP1MVY-i0.woff2) format('woff2'), url(http://fonts.gstatic.com/s/oldstandardtt/v7/QQT_AUSp4AV4dpJfIN7U5KCfO6YLYlwZkGaKgYrym0o.woff) format('woff');
+}
