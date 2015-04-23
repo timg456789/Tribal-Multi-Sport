@@ -60,6 +60,7 @@ $(function() {
 	var currentYear = (new Date).getFullYear();
 				
 	$("body").append(
+		'<div style="float: right; width: 100%;" />' +
 		'<div class="lightBlue section contactUs">' +
 			'<div class="learnMore">Want to Learn More?</div>' +
 			'<form action="/pages/contact.html">' +

@@ -1,32 +1,32 @@
 var athletes = [
 	{
-		imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
-		name: "1",
+		imgSrc: "/images/manRunning.png",
+		name: "Sebring Sierra",
 		details: "lmnop"
 	},
 	{
-		imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
-		name: "athlete 2",
+		imgSrc: "/images/womanStandingWithBike.png",
+		name: "Lindsay Macconnel",
 		details: "qrstuv"
 	},
 	{
-		imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
-		name: "3",
+		imgSrc: "/images/runningAcrossFinishLine.png",
+		name: "Brett Hendricks",
 		details: "lmnop"
 	},
 	{
-		imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
-		name: "athlete 4",
+		imgSrc: "/images/johnAtkins.png",
+		name: "John Atkins",
 		details: "qrstuv"
 	},
 	{
-		imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
+		imgSrc: "/images/bryanPallas.png",
 		name: "5",
 		details: "lmnop"
 	},
 	{
-		imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
-		name: "athlete 6",
+		imgSrc: "/images/roseLaurence.png",
+		name: "Rose Laurence",
 		details: "qrstuv"
 	},
 	{
