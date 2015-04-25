@@ -1,4 +1,5 @@
-body {
+body,
+body > div {
 	font-family: 'Exo', sans-serif;
 	letter-spacing: .1em;
 }
@@ -215,15 +216,11 @@ body h3 {
 
 .slider {
 	text-align: center;
+	margin-bottom: 60px;
 }
 
 div.slider {
 	padding-left: 0px;
-}
-
-.sliderImage {
-	width: 225px;
-	height: 225px;
 }
 
 .sliderName {
@@ -269,4 +266,40 @@ input.btn {
 .copyright {
 	font-size: .9em;
 	font-weight: 100; /* Font gets blurry in lower sizes. */
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
 }
