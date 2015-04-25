@@ -96,7 +96,7 @@ body h3 {
 #mainNav > li > a {
 	color: black;
 	font-weight: 500;
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 
 .socialIcon {
@@ -159,10 +159,6 @@ body h3 {
 
 .button {
 	display: inline-block;
-}
-
-.section {
-	padding-bottom: 60px;
 }
 
 .section {
