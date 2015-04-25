@@ -6,12 +6,23 @@
 	<script src="/js/tribal.js"></script>
 	<script src="/js/slider.js"></script>
 	<script type="text/javascript">
-		/* Load slider with athletes */
-		var sliderData = athletes;
+		/* Load slider with sponsors */
+		var sliderData = sponsors;
+		var rowCount = sponsorRowCount;
+		var rowSize = sponsorRowSize;
 		$(function() {
 			updateSlider();
 		});
 	</script>
+	<style type="text/css">
+		.slider {
+			margin-top: 30px;
+		}
+	
+		.sliderImage {
+			border-radius: 5px;
+		}
+	</style>
   </head>
   <body id="sponsorsPage">
   	<div class="deepBlue headerSection container-fluid">

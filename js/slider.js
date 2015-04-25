@@ -61,6 +61,52 @@ var athletes = [
 	}
 ];
 
+var sponsors = [
+	{
+		imgSrc: "/images/Sponsors-Large.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsors-Large.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsors-Large.jpg"
+	},
+	
+	{
+		imgSrc: "/images/Sponsors-Med.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsors-Med.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsors-Med.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsors-Med.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsor-Small.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsor-Small.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsor-Small.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsor-Small.jpg"
+	},
+	{
+		imgSrc: "/images/Sponsor-Small.jpg"
+	}
+];
+
+var athleteRowCount = 2;
+var athleteRowSize = [3, 3]; // The two rows have 3 images each.
+
+var sponsorRowCount = 3;
+var sponsorRowSize = [3, 4, 5]; // First row has three images, second row has four images, third row has five images.
+
 var sliderIndex = 0;
 
 function updateSlider() {
@@ -98,30 +144,50 @@ function incrementSliderIndex() {
 }
 
 function getSliderHtml() {
-	var widgetHtml;
+	var widgetHtml = '';
+	var dataIndex = 0;
 	
-	widgetHtml = '<div class="row">';
-	widgetHtml += getSliderItemHtml(sliderData[sliderIndex]);
-	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 1]);
-	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 2]);
-	widgetHtml += '</div>';
-	
-	widgetHtml += '<div class="row">';
-	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 3]);
-	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 4]);
-	widgetHtml += getSliderItemHtml(sliderData[sliderIndex + 5]);
-	widgetHtml += '</div>';
+	for(var ct = 0; ct < rowCount; ct++) {
+			widgetHtml += '<div class="row">';
+			
+			var cols = rowSize[ct];
+			var style = getClassForCols(cols);
+			
+			for(var colCt = 0; colCt < cols; colCt++) {
+				widgetHtml += getSliderItemHtml(sliderData[dataIndex], style);
+				dataIndex++;
+			}
+			
+			widgetHtml += '</div>';
+	}
 		
 	return widgetHtml;
 }
 
-function getSliderItemHtml(sliderItemData) {
+function getClassForCols(cols) {
+		if (cols == 3) {
+			return "slider col-md-4";
+		} else if (cols == 4) {
+			return "slider col-md-3";
+		} else if (cols == 5) {
+			return "slider col-md-5ths";
+		}
+}
+
+function getSliderItemHtml(sliderItemData, style) {
 	var widgetHtml;
 	
-	widgetHtml = '<div class="slider col-md-3 col-md-offset-1">';
+	widgetHtml = '<div class="' + style + '">';
 	widgetHtml +=	'<img class="sliderImage" src="' + sliderItemData.imgSrc + '" alt="' + sliderItemData.name + '" />';
-	widgetHtml +=	'<div class="sliderName">' + sliderItemData.name + '</div>';
-	widgetHtml +=	'<div class="sliderDescription">' + sliderItemData.details + '</div>';
+	
+	if (sliderItemData.name !== undefined) {
+		widgetHtml +=	'<div class="sliderName">' + sliderItemData.name + '</div>';
+	}
+	
+	if (sliderItemData.details) {
+		widgetHtml +=	'<div class="sliderDescription">' + sliderItemData.details + '</div>';
+	}
+	
 	widgetHtml += '</div>';
 	
 	return widgetHtml;

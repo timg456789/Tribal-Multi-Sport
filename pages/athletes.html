@@ -8,10 +8,19 @@
 	<script type="text/javascript">
 		/* Load slider with athletes */
 		var sliderData = athletes;
+		var rowCount = athleteRowCount;
+		var rowSize = athleteRowSize;
+		console.log(rowCount);
 		$(function() {
 			updateSlider();
 		});
 	</script>
+	<style type="text/css">
+		.sliderImage {
+			width: 225px;
+			height: 225px;
+		}
+	</style>
   </head>
   <body id="athletesPage">
   	<div class="deepBlue headerSection container-fluid">
