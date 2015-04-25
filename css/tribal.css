@@ -303,3 +303,8 @@ input.btn {
         float: left;
     }
 }
+
+div.container,
+h1.container {
+	max-width: 970px;
+}
