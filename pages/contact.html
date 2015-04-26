@@ -33,39 +33,122 @@
 			margin-left: 3%;
 			width: 34%;
 			height: 265px;
+			float: right;
+		}
+		
+		h3 {
+			float: left;
 		}
 	</style>
+	
+	<script type="text/javascript">
+		function isContactFormValid() {
+			var validation = "";
+			var err = "has-error";
+			
+			var fName = $("#fullName").val();
+			fName = $.trim(fName);
+			if (!fName) {
+				validation += "<li>Name is required</li>";
+				$(".form-group.name").addClass(err);
+			} else {
+				$(".form-group.name").removeClass(err);
+			}
+			
+			var email = $("#email").val();
+			email = $.trim(email);
+			if (!email) {
+				validation += "<li>Email is required</li>";
+				$(".form-group.email").addClass(err);
+			} else {
+				$(".form-group.email").removeClass(err);
+			}
+			
+			var msg = $("#message").val();
+			msg = $.trim(msg); 
+			if (!msg) {
+				validation += "<li>Message is required</li>";
+				$(".form-group.message").addClass(err);
+			} else {
+				$(".form-group.message").removeClass(err);
+			}
+
+			if (validation.length > 0) {
+				var validationHtml =
+					"<ul id='validationList'>" +
+						validation +
+					"</ul>";
+					
+				$("#validationArea").html(validationHtml);
+				$("#validationArea").focus();
+			}
+			
+			return validation.length == 0;
+		}
+		
+		$(function() {
+			var step = getParameterByName("formStep");
+			
+			if (step != null &&
+				step.localeCompare('thankYou') == 0) {
+				$(".contactFormContainer").hide();
+				console.log("thanks");
+			} else {
+				$(".contactThankYouContainer").show();
+			}
+		});
+	
+		function getParameterByName(name) {
+			var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+			return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+		}
+	
+	</script>
   </head>
   <body id="contactUsPage">
   	<div class="headerSection deepBlue section">
 		<h1>Contact Us</h1>
 	</div>
-	<div class="formMap section ancientGreen container-fluid">
-		<h2 class="contactUsHeader" >Contact Form</h2>
-		<form class="contactUsForm">
-				<div>Fields marked with an * are required</div>
-				<div class="form-group name">
-					<label for="nameInput">Name*</label>
-					<input type="text" class="form-control" placeholder="Name" id="nameInput" />
-				</div>
-				<div class="form-group email">
-					<label for="emailInput">Email Address*</label>
-					<input type="email" class="form-control" placeHolder="Please enter your email address." id="emailInput" />
-				</div>
-				<div class="form-group">
-					<label for="subjectInput">Subject</label>
-					<textarea rows="5" class="form-control"></textarea>
-				</div>
-				<div class="form-group">
-					<label for="messageInput">Message*</label>
-					<textarea rows="5" class="form-control" id="messageInput"></textarea>
-				</div>
-				<input class="btn lightBlue" type="submit" value="Submit" />
-		</form>
+	<div class="formMap section ancientGreen">
+		<div class="container">
+			<div class="contactThankYouContainer">
+				<h3>
+					Message Submitted Successfully
+					<span class="glyphicon glyphicon-ok successColor" aria-hidden="true"></span>
+				</h3>
+			</div>
+			
+			<div class="contactFormContainer">
+				<h2 class="contactUsHeader">Contact Form</h2>
+				<form
+					class="contactUsForm"
+					action="/forms/contact.php"
+					method="post"
+					onSubmit="return isContactFormValid();">
+						<div>Fields marked with an * are required</div>
+						<div id="validationArea"></div>
+						<div class="form-group name">
+							<label for="fullName">Name*</label>
+							<input type="text" class="form-control" placeholder="Name" id="fullName" name="fullName" />
+						</div>
+						<div class="form-group email">
+							<label for="email">Email Address*</label>
+							<input type="email" class="form-control" placeHolder="Please enter your email address." id="email" name="email" />
+						</div>
+						<div class="form-group">
+							<label for="subject">Subject</label>
+							<textarea rows="5" class="form-control id="subject" name="subject"></textarea>
+						</div>
+						<div class="form-group message">
+							<label for="message">Message*</label>
+							<textarea rows="5" class="form-control" id="message" name="message"></textarea>
+						</div>
+						<input class="btn lightBlue" type="submit" value="Submit" />
+				</form>
+			</div>
 		
-		
-		
-		<iframe class="contactUsMap" src="//maps.google.com/maps?v=2&amp;f=q&amp;ie=UTF8&amp;t=m&amp;iwloc=&amp;q=tampa%2c+flo&amp;hl=en&amp;z=11&amp;source=s_q&amp;output=embed" height="100%" scrolling="no"></iframe>
+			<iframe class="contactUsMap" src="//maps.google.com/maps?v=2&amp;f=q&amp;ie=UTF8&amp;t=m&amp;iwloc=&amp;q=tampa%2c+flo&amp;hl=en&amp;z=11&amp;source=s_q&amp;output=embed" height="100%" scrolling="no"></iframe>
+		</div>
 	</div>
   </body>
 </html>
