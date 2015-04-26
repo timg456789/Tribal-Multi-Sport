@@ -21,7 +21,7 @@ var athletes = [
 	},
 	{
 		imgSrc: "/images/bryanPallas.png",
-		name: "5",
+		name: "Bryan Palas",
 		details: "lmnop"
 	},
 	{
