@@ -4,7 +4,122 @@
 		<script src="/libraries/jquery.min.js"></script>
 		<script src="/libraries/bootstrap/js/bootstrap.min.js"></script>
 		<script src="/js/tribal.js"></script>
-	</head>
+		<script src="/js/slider.js"></script>
+		<script type="text/javascript">
+		
+		var pagesConfig = {
+			selector: "#slider",
+			rowCount: 1,
+			rowSize: [3],
+			data: [
+				{
+					imgSrc: "/images/womanStandingWithBike.png",
+					name: "ATHLETES",
+					details: ""
+				},
+				{
+					imgSrc: "/images/NicholasChase.png",
+					name: "COACHES",
+					details: ""
+				},
+				{
+					imgSrc: "/images/training-camp-cropped.jpg",
+					name: "TRAINING CAMPS",
+					details: ""
+				}
+			]
+		};
+		
+		var sponsorsConfig = {
+			selector: "#sponsorImages",
+			rowCount: 1,
+			rowSize: [5],
+			data: [
+				{
+					imgSrc: "/images/womanStandingWithBike.png",
+					name: "ATHLETES",
+					details: ""
+				},
+				{
+					imgSrc: "/images/NicholasChase.png",
+					name: "COACHES",
+					details: ""
+				},
+				{
+					imgSrc: "/images/training-camp-cropped.jpg",
+					name: "TRAINING CAMPS",
+					details: ""
+				},
+								{
+					imgSrc: "/images/NicholasChase.png",
+					name: "COACHES",
+					details: ""
+				},
+				{
+					imgSrc: "/images/training-camp-cropped.jpg",
+					name: "TRAINING CAMPS",
+					details: ""
+				}
+			]
+		};
+		
+		var socialConfig = {
+			selector: "#socialSlider",
+			rowCount: 2,
+			rowSize: [4, 4],
+			data: [
+				{
+					imgSrc: "/images/NicholasChase.png",
+					name: "",
+					details: ""
+				},
+				{
+					imgSrc: "/images/training-camp-cropped.jpg",
+					name: "",
+					details: ""
+				},
+								{
+					imgSrc: "/images/NicholasChase.png",
+					name: "",
+					details: ""
+				},
+				{
+					imgSrc: "/images/training-camp-cropped.jpg",
+					name: "",
+					details: ""
+				},
+				{
+					imgSrc: "/images/NicholasChase.png",
+					name: "",
+					details: ""
+				},
+				{
+					imgSrc: "/images/training-camp-cropped.jpg",
+					name: "",
+					details: ""
+				},
+								{
+					imgSrc: "/images/NicholasChase.png",
+					name: "",
+					details: ""
+				},
+				{
+					imgSrc: "/images/training-camp-cropped.jpg",
+					name: "",
+					details: ""
+				}
+			]
+		};
+		
+		$(function() {
+			updateSlider(pagesConfig);
+			updateSlider(sponsorsConfig);
+			updateSlider(socialConfig);
+		});
+		</script>
+	
+	
+	
 	
 	<style type="text/css">
 		.headerSection.slider {
@@ -80,19 +195,96 @@
 			font-size: .88em;
 		}
 		
+		.servicesContainer {
+			background-image: url(/images/services-bg.jpg);
+			background-size: cover;
+		}
 		
+		.seeAllServices {
+			text-align: center;
+			padding-top: 30px;
+			padding-bottom: 100px;
+		}
+		
+		#slider {
+			padding-top: 50px;
+		}
+		
+		.sponsors,
+		.blog{
+			text-align: center;
+		}
+		
+		#sponsorImageHeader {
+			padding-bottom: 30px;
+		}
+		
+		#slider .sliderImage{
+			width: 225px;
+			height: 225px;
+		}
+		
+		#sponsorImages .sliderImage {
+			width: 200px;
+			height: 50px;
+		}
+		
+		.blog {
+			background-image: url(/images/blog-bg.jpg);
+			background-size: cover;
+			text-align: left;
+		}
+		
+		.blog h2 {
+			margin-bottom: 20px;
+		}
+		
+		.blog img {
+			padding-right: 50px;
+			width: 225px;
+		}
+		
+		.blog .posts > div {
+			clear: both;
+		}
+		
+		.blog .posts > div:not(:first-child) {
+			padding-top: 75px;
+		}
+		
+		.blog .posts h3 {
+			padding-top: 0px;
+		}
+		
+		.blog .post .date {
+			text-transform: capitalize;
+			font-size: 1.2em;
+			margin-top: 7px;
+			margin-bottom: -1px;
+			font-weight: 400;
+			text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4); /* Gray text alone doesn't give enough contrast. */
+		}
+		
+		#socialSlider img {
+			height: 180px;
+			width: 180px;
+		}
+		
+		.viewSponsors {
+			margin-bottom: 45px;
+		}
+		
+		.social .date {
+			font-size: .8em;
+			font-weight: 400;
+		}
 	</style>
+
+	</head>
+	
 	
 	
 	<body>
-	
-	
-	
-	
-	
-	
-	
-	
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -144,7 +336,7 @@
 		</div>
 	</div>
 	
-	<div class="gray section">
+	<div class="gray section servicesContainer">
 		<div class="container">
 			<h2>Services</h2>
 			<div class="services">
@@ -170,7 +362,7 @@
 				</ul>
 			</div>
 			
-			<div style="clear: both;" />
+			<div style="clear: both;"></div>
 			
 			<div class="services">
 				<h3>Group Training Sessions</h3>
@@ -180,7 +372,7 @@
 			</div>
 			<img class="servicesImage" src="/images/group-running.png" alt="Runing on treadmill" />
 			
-			<div style="clear: both;" />
+			<div style="clear: both;"></div>
 			
 			<div class="seeAllServices">
 				<form action="/pages/services.html">
@@ -188,6 +380,89 @@
 				</form>
 			</div>
 
+		</div>
+	</div>
+	
+	<div id="slider" class="section prussianBlue container-fluid"></div>
+	
+	<div class="section darkBlue container-fluid sponsors">
+		<h3 id="sponsorImageHeader">Our Sponsors</h3>
+		<div id="sponsorImages"></div>
+		<div class="viewSponsors">
+			<form action="/pages/sponsors.html">
+				<input type="submit" class="ancientGreen btn" value="VIEW ALL SPONSORS" />
+			</form>
+		</div>
+	</div>
+	
+	<div class="section lightBlue container-fluid blog">
+	
+		<div class="container">
+			<h2>Blog</h2>
+			
+			<div class="posts">
+				<div class="post">
+					<img src="/images/Home-Small.jpg" alt="Running" style="float: left;" />
+					<h3>Upcoming Event</h3>
+					<p class="date grayText">March 29, 2015</p>
+					<p>Lorem Ipsum Dipsum</p>
+				</div>
+							
+				<div class="post">
+					<img src="/images/group-running.png" alt="Running" style="float: left;" />
+					<h3>Upcoming Event</h3>
+					<p class="date grayText">March 29, 2015</p>
+					<p>Lorem Ipsum Dipsum</p>
+				</div>
+				
+				<div class="post">
+					<img src="/images/into-the-water.jpg" alt="Running" style="float: left;" />
+					<h3>Upcoming Event</h3>
+					<p class="date grayText">March 29, 2015</p>
+					<p>Lorem Ipsum Dipsum</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="section container-fuid prussianBlue social">
+		<div class="container">
+			<h2>Connect With Us</h2>
+			
+			<div id="socialSlider"></div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<h3>FACEBOOK</h3>
+					
+					<div class="row">
+						<div class="col-md-6">
+							<span class="date">September 30</span>
+							<br />
+							Facebook Post. Some text goes here. <a href="#">Read More</a>
+							<br />
+							<img src="" alt="Image Preview" />
+						</div>
+						<div class="col-md-6">
+							<span class="date">September 30</span>
+							<br />
+							Facebook Post. Some text goes here. <a href="#">Read More</a>
+							<br />
+							<img src="" alt="Image Preview" />
+						</div>
+					</div>
+					
+					
+					
+					
+					
+
+				</div>
+				<div class="col-md-6">
+					<h3>TWITTER</h3>
+				</div>
+			</div>
 		</div>
 	</div>
 	
