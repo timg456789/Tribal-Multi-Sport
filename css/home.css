@@ -154,3 +154,8 @@ a.carousel-indicators {
 	font-size: .8em;
 	font-weight: 400;
 }
+
+.social a {
+	text-decoration: underline;
+	color: white;
+}

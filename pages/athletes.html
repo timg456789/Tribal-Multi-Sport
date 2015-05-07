@@ -6,12 +6,77 @@
 	<script src="/js/tribal.js"></script>
 	<script src="/js/slider.js"></script>
 	<script type="text/javascript">
-		/* Load slider with athletes */
-		var sliderData = athletes;
-		var rowCount = athleteRowCount;
-		var rowSize = athleteRowSize;
+	
+		var athleteConfig = {
+			selector: "#slider",
+			rowCount: 2,
+			rowSize: [3, 3],
+			data: [
+				{
+					imgSrc: "/images/manRunning.png",
+					name: "Sebring Sierra",
+					details: "lmnop"
+				},
+				{
+					imgSrc: "/images/womanStandingWithBike.png",
+					name: "Lindsay Macconnel",
+					details: "qrstuv"
+				},
+				{
+					imgSrc: "/images/runningAcrossFinishLine.png",
+					name: "Brett Hendricks",
+					details: "lmnop"
+				},
+				{
+					imgSrc: "/images/johnAtkins.png",
+					name: "John Atkins",
+					details: "qrstuv"
+				},
+				{
+					imgSrc: "/images/bryanPallas.png",
+					name: "Bryan Palas",
+					details: "lmnop"
+				},
+				{
+					imgSrc: "/images/roseLaurence.png",
+					name: "Rose Laurence",
+					details: "qrstuv"
+				},
+				{
+					imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
+					name: "7",
+					details: "lmnop"
+				},
+				{
+					imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
+					name: "8",
+					details: "qrstuv"
+				},
+				{
+					imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
+					name: "9",
+					details: "lmnop"
+				},
+				{
+					imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
+					name: "10",
+					details: "lmnop"
+				},
+				{
+					imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
+					name: "11",
+					details: "lmnop"
+				},
+				{
+					imgSrc: "http://nebula.wsimg.com/8e96bf66f31fd3d404a710ad1bdfc374?AccessKeyId=A460DC0C831767955872&disposition=0&alloworigin=1",
+					name: "12",
+					details: "lmnop"
+				}
+			]
+		};
+		
 		$(function() {
-			updateSlider("#slider");
+			updateSlider(athleteConfig);
 		});
 	</script>
 	<style type="text/css">

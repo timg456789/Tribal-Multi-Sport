@@ -6,12 +6,78 @@
 	<script src="/js/tribal.js"></script>
 	<script src="/js/slider.js"></script>
 	<script type="text/javascript">
-		/* Load slider with sponsors */
-		var sliderData = sponsors;
-		var rowCount = sponsorRowCount;
-		var rowSize = sponsorRowSize;
+	
+		var sponsorConfig = {
+			selector: "#slider",
+			rowCount: 3,
+			rowSize: [3, 4, 5],
+			data: [
+					{
+						imgSrc: "/images/Sponsors-Large.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsors-Large.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsors-Large.jpg",
+						name: "",
+						details: ""
+					},
+					
+					{
+						imgSrc: "/images/Sponsors-Med.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsors-Med.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsors-Med.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsors-Med.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsor-Small.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsor-Small.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsor-Small.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsor-Small.jpg",
+						name: "",
+						details: ""
+					},
+					{
+						imgSrc: "/images/Sponsor-Small.jpg",
+						name: "",
+						details: ""
+					}
+				]
+			};
+		
 		$(function() {
-			updateSlider();
+			updateSlider(sponsorConfig);
 		});
 	</script>
 	<style type="text/css">
