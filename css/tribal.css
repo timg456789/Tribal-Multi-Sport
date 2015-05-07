@@ -2,7 +2,8 @@ body,
 body > div {
 	font-family: 'Exo', sans-serif;
 	letter-spacing: .1em;
-	font-weight: 500;
+	font-weight: 400;
+	font-size: 1.1em;
 }
 
 html > body,
@@ -195,25 +196,29 @@ body > .section:nth-last-child(3) {
 .trainingPlanContent,
 .oneOnOneCoachingContent,
 .groupTrainingSection {
-	margin-left: 50px;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
-.groupTrainingSection {
-	padding-top: 30px;
-	padding-bottom: 30px;
+.trainingPlanContent h2,
+.oneOnOneCoachingContent h2,
+.groupTrainingSection h2 {
+	text-transform: none;
+	text-align: left;
 }
 
 .additionalServices  img {
 	margin-top: 30px;
-	height: 242px;
-	width: 242px;
+	height: 225px;
+	width: 225px;
 	border-radius: 5px;
 }
 
 .additionalServices p {
-	font-size: 1.1em;
-	font-weight: 300;
-	padding-top: 30px;
+	padding-top: 30px; 
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
 }
 
 #athletesPage .contactUs,
@@ -326,3 +331,21 @@ h1.container {
 	border-width: 3px;
 }
 
+.groupTrainingSection {
+	background-image: url(/images/group-bg.jpg);
+	background-size: cover;
+}
+
+.oneOnOneCoachingContent {
+	background-image: url(/images/one-on-one-bg.jpg);
+	background-size: cover;
+}
+
+.trainingPlans {
+	background-image: url(/images/personalized-bg.jpg);
+	background-size: cover;
+}
+
+#servicesPage .additionalServices  h4 {
+	max-width: 90%;
+}
