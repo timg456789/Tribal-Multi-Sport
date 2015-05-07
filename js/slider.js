@@ -101,6 +101,7 @@ var sponsors = [
 	}
 ];
 
+
 var athleteRowCount = 2;
 var athleteRowSize = [3, 3]; // The two rows have 3 images each.
 
@@ -109,14 +110,14 @@ var sponsorRowSize = [3, 4, 5]; // First row has three images, second row has fo
 
 var sliderIndex = 0;
 
-function updateSlider() {
-	$("#slider").html(
+function updateSlider(config) {
+	$(config.selector).html(
 	
 		'<div class="row">' +
 		
 			'<div class="col-md-1"></div>'+
 			'<div class="col-md-10">' +
-				getSliderHtml() +
+				getSliderHtml(config) +
 			'</div>' +
 			'<div class="col-md-1"></div>'+
 
@@ -143,18 +144,18 @@ function incrementSliderIndex() {
 	}
 }
 
-function getSliderHtml() {
+function getSliderHtml(config) {
 	var widgetHtml = '';
 	var dataIndex = 0;
 	
-	for(var ct = 0; ct < rowCount; ct++) {
+	for(var ct = 0; ct < config.rowCount; ct++) {
 			widgetHtml += '<div class="row">';
 			
-			var cols = rowSize[ct];
+			var cols = config.rowSize[ct];
 			var style = getClassForCols(cols);
 			
 			for(var colCt = 0; colCt < cols; colCt++) {
-				widgetHtml += getSliderItemHtml(sliderData[dataIndex], style);
+				widgetHtml += getSliderItemHtml(config.data[dataIndex], style);
 				dataIndex++;
 			}
 			
