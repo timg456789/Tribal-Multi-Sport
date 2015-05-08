@@ -13,6 +13,11 @@ background: rgba(255, 255, 255, 0.8) url('/images/Home-Sliderbg.JPG') ;
 	padding-top: 75px;
 }
 
+.sliderName {
+	margin-top: 12px;
+	font-weight: 500;
+}
+
 .slider > p {
 	color: black;
 	font-size: 1.2em;
@@ -158,4 +163,10 @@ a.carousel-indicators {
 .social a {
 	text-decoration: underline;
 	color: white;
+}
+	
+#slider input.btn {
+	font-size: 1em;
+	letter-spacing: inherit;
+	margin-bottom: 50px;
 }

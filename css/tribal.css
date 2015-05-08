@@ -349,3 +349,17 @@ h1.container {
 #servicesPage .additionalServices  h4 {
 	max-width: 90%;
 }
+
+.introText {
+	margin-top: 15px;
+	font-weight: 200;
+}
+
+.additionalServices  h4 {
+	margin-top: 25px;
+	line-height: 150%;
+}
+
+
+
+
