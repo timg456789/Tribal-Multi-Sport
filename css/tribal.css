@@ -221,6 +221,11 @@ body > .section:nth-last-child(3) {
 	text-align: center; 
 }
 
+#athletesPage .sliderImage {
+	width: 225px;
+	height: 225px;
+}
+
 #athletesPage .contactUs,
 #sponsorsPage .contactUs {
 	background-color: #009688;;
