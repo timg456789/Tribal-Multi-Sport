@@ -331,17 +331,17 @@ h1.container {
 }
 
 .groupTrainingSection {
-	background-image: url(/images/group-bg.jpg);
+	background-image: url(../images/group-bg.jpg);
 	background-size: cover;
 }
 
 .oneOnOneCoachingContent {
-	background-image: url(/images/one-on-one-bg.jpg);
+	background-image: url(../images/one-on-one-bg.jpg);
 	background-size: cover;
 }
 
 .trainingPlans {
-	background-image: url(/images/personalized-bg.jpg);
+	background-image: url(../images/personalized-bg.jpg);
 	background-size: cover;
 }
 
@@ -479,7 +479,7 @@ h1.container {
 }
 
 #homePage  .headerSection.slider {
-background: rgba(255, 255, 255, 0.8) url('/images/Home-Sliderbg.JPG') ;
+background: rgba(255, 255, 255, 0.8) url('../images/Home-Sliderbg.JPG') ;
 
 	height: 300px;
 	background-position: top center;
