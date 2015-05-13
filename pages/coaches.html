@@ -5,37 +5,13 @@
 	<script src="../libraries/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../js/tribal.js"></script>
   </head>
-  <style type="text/css">
-	h2.coachProfile{
-		padding-top: 0px;
-		margin-top: -8px;"
-	}
-	
-	.row {
-		padding-bottom: 65px;
-	}
-	
-	.container > h2,
-	.container > img {
-		margin-top: 50px;
-	}
-	
-	.container > p {
-		overflow: hidden; /* Don't wrap text under image */
-	}
-	
-	.container > p:not(:last-child) {
-		margin-bottom: 30px;
-	}
-  </style>
-  <body>
+  <body id="coachesPage">
 	  <div class="section headerSection deepBlue">
 		<h1>Coaches</h1>
 	</div>
-	
 	<div class="deepBlue section container-fluid">
 		<div class="container">
-			<img style="float: right; padding-right: 30px; padding-left: 30px; padding-right: 30px;" src="../images/JonNoland.jpg" alt="Jon Noland Riding Bicycle" />
+			<img class="coachOneImg" src="../images/JonNoland.jpg" alt="Jon Noland Riding Bicycle" />
 			<h2 class="coachProfile">Jon Noland</h2>
 			<p>
 				As an athlete and as a coach, my approach has always been simple - focus on the process,
@@ -54,7 +30,7 @@
 	</div>
 	<div class="ancientGreen section container-fluid">
 		<div class="container">
-			<img src="../images/NicholasChase.png" style="float: left; padding-left: 30px; padding-right: 30px;" alt="Nicholas Chase Riding Bicycle" />
+			<img class="coachTwoImg" src="../images/NicholasChase.png" alt="Nicholas Chase Riding Bicycle" />
 			<h2 class="coachProfile">Nicholas Chase</h2>
 			<p>
 				You aren't just another "athlete" or another "race entry". There isn't a cookie cutter training program that will give
@@ -69,7 +45,5 @@
 			</p>
 		</div>
 	</div>
-			
-
   </body>
 </html>

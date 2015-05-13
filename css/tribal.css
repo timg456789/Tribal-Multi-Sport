@@ -366,5 +366,36 @@ h1.container {
 }
 
 
+#coachesPage h2.coachProfile{
+	padding-top: 0px;
+	margin-top: -8px;"
+}
 
+#coachesPage .row {
+	padding-bottom: 65px;
+}
 
+#coachesPage .container > h2,
+#coachesPage .container > img {
+	margin-top: 50px;
+}
+
+#coachesPage .container > p {
+	overflow: hidden; /* Don't wrap text under image */
+}
+
+#coachesPage .container > p:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+#coachesPage .coachOneImg {
+	float: right;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#coachesPage .coachTwoImg {
+	float: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
