@@ -72,6 +72,12 @@ body h3 {
 	text-transform: uppercase;
 }
 
+.subHeader {
+	font-size:1.6em;
+	margin-top:15px;
+	margin-bottom: 60px;
+}
+
 body > .section:nth-last-child(3) {
 	padding-bottom: 90px;
 }
@@ -373,6 +379,10 @@ h1.container {
 	padding-right: 30px;
 }
 
+#contactUsPage .introText {
+	text-align: left;
+}
+
 #contactUsPage .contactUs {
 	display:none; /* Don't show the contact us link when in the contact us page. */
 }
@@ -420,12 +430,6 @@ h1.container {
 	margin-top: 20px;
 }
 
-#servicesPage .subHeader {
-	font-size:1.6em;
-	margin-top:15px;
-	margin-bottom: 60px;
-}
-
 #servicesPage .additionalServices  h4 {
 	max-width: 90%;
 }
@@ -433,6 +437,7 @@ h1.container {
 .introText {
 	margin-top: 15px;
 	font-weight: 200;
+	padding-bottom: 30px;
 }
 
 .additionalServices  h4 {
@@ -567,7 +572,7 @@ background: rgba(255, 255, 255, 0.8) url('/images/Home-Sliderbg.JPG') ;
 }
 
 #homePage .sponsors,
-#homePage .blog{
+#homePage .blog {
 	text-align: center;
 }
 
@@ -589,6 +594,7 @@ background: rgba(255, 255, 255, 0.8) url('/images/Home-Sliderbg.JPG') ;
 	background-image: url(/images/blog-bg.jpg);
 	background-size: cover;
 	text-align: left;
+	padding-bottom: 80px;
 }
 
 #homePage .blog h2 {

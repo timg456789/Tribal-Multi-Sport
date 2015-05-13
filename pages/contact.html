@@ -54,10 +54,11 @@
 			
 			if (step != null &&
 				step.localeCompare('thankYou') == 0) {
-				$(".contactFormContainer").hide();
-				console.log("thanks");
-			} else {
 				$(".contactThankYouContainer").show();
+				$(".contactFormContainer").hide();
+			} else {
+				$(".contactThankYouContainer").hide();
+				$(".contactFormContainer").show();
 			}
 		});
 	
@@ -69,8 +70,13 @@
 	</script>
   </head>
   <body id="contactUsPage">
-  	<div class="headerSection deepBlue section">
-		<h1>Contact Us</h1>
+  	<div class="headerSection deepBlue section container-fluid">
+		<div class="container">
+			<h1>Contact Us</h1>
+			<p class="introText">		
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan lorem. Praesent vitae sagittis orci. Fusce nec metus laoreet, vestibulum neque porta, tincidunt neque. Aenean ligula ex, fringilla et tempor vitae, rhoncus vitae diam. Suspendisse vehicula vitae ligula sit amet euismod. In eu cursus ante, ut rutrum quam. Nunc sapien nulla, vehicula quis consectetur et, tincidunt venenatis est. Donec sed felis consectetur diam vulputate gravida. Pellentesque laoreet sapien ac leo sodales, ut venenatis tortor volutpat.
+			</p>
+		</div>
 	</div>
 	<div class="formMap section ancientGreen">
 		<div class="container">
@@ -80,7 +86,6 @@
 					<span class="glyphicon glyphicon-ok successColor" aria-hidden="true"></span>
 				</h3>
 			</div>
-			
 			<div class="contactFormContainer">
 				<h2 class="contactUsHeader">Contact Form</h2>
 				<form
@@ -109,8 +114,7 @@
 						<input class="btn lightBlue" type="submit" value="Submit" />
 				</form>
 			</div>
-		
-			<iframe class="contactUsMap" src="//maps.google.com/maps?v=2&amp;f=q&amp;ie=UTF8&amp;t=m&amp;iwloc=&amp;q=tampa%2c+flo&amp;hl=en&amp;z=11&amp;source=s_q&amp;output=embed" height="100%" scrolling="no"></iframe>
+			<iframe class="contactUsMap contactFormContainer" src="//maps.google.com/maps?v=2&amp;f=q&amp;ie=UTF8&amp;t=m&amp;iwloc=&amp;q=tampa%2c+flo&amp;hl=en&amp;z=11&amp;source=s_q&amp;output=embed" height="100%" scrolling="no"></iframe>
 		</div>
 	</div>
   </body>
