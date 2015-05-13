@@ -339,21 +339,6 @@ h1.container {
 	background-size: cover;
 }
 
-#servicesPage .additionalServices  h4 {
-	max-width: 90%;
-}
-
-.introText {
-	margin-top: 15px;
-	font-weight: 200;
-}
-
-.additionalServices  h4 {
-	margin-top: 25px;
-	line-height: 150%;
-}
-
-
 #coachesPage h2.coachProfile{
 	padding-top: 0px;
 	margin-top: -8px;"
@@ -433,4 +418,24 @@ h1.container {
 
 #contactUsPage .contactUs > form > input {
 	margin-top: 20px;
+}
+
+#servicesPage .subHeader {
+	font-size:1.6em;
+	margin-top:15px;
+	margin-bottom: 60px;
+}
+
+#servicesPage .additionalServices  h4 {
+	max-width: 90%;
+}
+
+.introText {
+	margin-top: 15px;
+	font-weight: 200;
+}
+
+.additionalServices  h4 {
+	margin-top: 25px;
+	line-height: 150%;
 }
