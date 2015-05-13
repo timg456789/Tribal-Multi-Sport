@@ -249,18 +249,6 @@ div.slider {
 	margin-bottom: 12px;
 }
 
-.contactUs > div {
-	font-size: 2em;
-}
-
-.contactUs > form > input {
-	margin-top: 20px;
-}
-
-#contactUsPage .contactUs {
-	display:none;
-}
-
 input.btn {
 	font-size: 2em;
 	letter-spacing: 4px;
@@ -398,4 +386,51 @@ h1.container {
 	float: left;
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+#contactUsPage .contactUs {
+	display:none; /* Don't show the contact us link when in the contact us page. */
+}
+
+#contactUsPage .formMap {
+	padding-top: 4%;
+}
+
+#contactUsPage .contactUsHeader {
+	float: left;
+	padding-top: 0px;
+}
+
+#contactUsPage .contactUsForm {
+	float: left;
+	width: 60%;
+	clear: left;
+}
+
+#contactUsPage .contactUsForm .name,
+#contactUsPage .contactUsForm .email {
+	width: 90%;
+}
+
+#contactUsPage .contactUsForm .form-group {
+	margin-top: 15px;
+}
+
+#contactUsPage .contactUsMap {
+	margin-left: 3%;
+	width: 34%;
+	height: 265px;
+	float: right;
+}
+
+#contactUsPage h3 {
+	float: left;
+}
+
+#contactUsPage .contactUs > div {
+	font-size: 2em;
+}
+
+#contactUsPage .contactUs > form > input {
+	margin-top: 20px;
 }
