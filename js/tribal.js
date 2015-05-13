@@ -6,15 +6,15 @@ $(function() {
 		'<meta name="viewport" content="width=device-width, initial-scale=1">' +
 		'<title>TRIBAL Multi-Sport</title>' +
 		'<link href="http://fonts.googleapis.com/css?family=Exo:200,300,400,500,600,700" rel="stylesheet" type="text/css">' +
-		'<link rel="stylesheet" type="text/css" href="/css/tribal.css">' +
-		'<link rel="stylesheet" type="text/css" href="/libraries/bootstrap/css/bootstrap.min.css">' +
-		'<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">' +
-		'<link rel="icon" href="/favicon.ico" type="image/x-icon">');
+		'<link rel="stylesheet" type="text/css" href="../css/tribal.css">' +
+		'<link rel="stylesheet" type="text/css" href="../libraries/bootstrap/css/bootstrap.min.css">' +
+		'<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">' +
+		'<link rel="icon" href="../favicon.ico" type="image/x-icon">');
 	
 	$("body").prepend(
 	'<div id="topContainer" class="container">' +
-		'<a href="/index.html">' +
-			'<img src="/images/logo.jpg"' +
+		'<a href="index.html">' +
+			'<img src="../images/logo.jpg"' +
 				'alt="Tribal Multi-Sport Logo"' +
 				'class="img-responsive center-block" />' +
 		'</a>' +
@@ -31,13 +31,13 @@ $(function() {
 
 			'<div class="collapse navbar-collapse" id="navMenu">' +
 			  '<ul id="mainNav" class="nav navbar-nav text-uppercase">' +
-				'<li><a href="/pages/services.html">Services</a></li>' +
-				'<li><a href="/pages/athletes.html">Athletes</a></li>' +
-				'<li><a href="/pages/coaches.html">Coaches</a></li>' +
-				'<li><a href="/pages/sponsors.html">Sponsors</a></li>' +
-				'<li><a href="/pages/training-camps.html">Training Camps</a></li>' +
-				'<li><a href="/pages/contact.html">Contact</a></li>' +
-				'<li><a href="/pages/blog.html">Blog</a></li>' +
+				'<li><a href="services.html">Services</a></li>' +
+				'<li><a href="athletes.html">Athletes</a></li>' +
+				'<li><a href="coaches.html">Coaches</a></li>' +
+				'<li><a href="sponsors.html">Sponsors</a></li>' +
+				'<li><a href="training-camps.html">Training Camps</a></li>' +
+				'<li><a href="contact.html">Contact</a></li>' +
+				'<li><a href="blog.html">Blog</a></li>' +
 			  '</ul>' +
 			'</div>' +
 		  '</div>' +
@@ -63,14 +63,14 @@ $(function() {
 	$("body").append(
 		'<div class="lightBlue section contactUs">' +
 			'<div class="learnMore">Want to Learn More?</div>' +
-			'<form action="/pages/contact.html">' +
+			'<form action="contact.html">' +
 				'<input type="submit" class="ancientGreen btn" value="Contact Us" />' +
 			'</form>' +
 		'</div>' +
 		
 		'<div class="darkBlue section footer">' +
 			'<a href="#">' +
-				'<img class="backToTop" src="/images/thin-chevron.png" alt="Back to Top Arrow" />' +
+				'<img class="backToTop" src="../images/thin-chevron.png" alt="Back to Top Arrow" />' +
 			'</a>' +
 			'<div class="copyright">&#64;' + currentYear + ' TRIBAL Multi-Sport. All rights reserved.</div>' +
 		'</div>');
