@@ -1,7 +1,0 @@
-Hex Colors:
-
-Accent Green: #009688;
-Deep Blue:    #02547a;
-Gray:         #999999;
-Lt Blue:      #02577a;
-Dark Blue:    #071620;
