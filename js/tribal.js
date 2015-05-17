@@ -74,4 +74,31 @@ $(function() {
 			'</a>' +
 			'<div class="copyright">&#64;' + currentYear + ' TRIBAL Multi-Sport. All rights reserved.</div>' +
 		'</div>');
+	
+	// Setup blog for styling.
+	var blogPostSubtitles = $("p.post-meta");
+	var blogPostTitles = $("h1.post-title");
+	var blogPostDates = $("time.post-date");
+		
+	for(var ct = 0; ct < blogPostSubtitles.length; ct++) {
+		var blogPostSubtitle = blogPostSubtitles[ct];
+		var blogPostTitle = blogPostTitles[ct];
+		var blogPostDate = blogPostDates[ct];
+		
+		$(blogPostTitle).insertAfter(blogPostSubtitle);
+		$(blogPostDate).insertAfter(blogPostTitle);
+	}
+	
+	$("#content").append(
+		$("<div id='blogContentContainer' class='container'></div>"));
+	
+	$("#blogContentContainer").append(
+		$("#loops-wrapper"));
+	
+	$("#blogContentContainer").append(
+		$("#sidebar"));
+		
+	$("#blogContentContainer").append(
+		$(".pagenav"));
+		
 });
