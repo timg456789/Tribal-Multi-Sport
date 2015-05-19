@@ -475,7 +475,7 @@ h1.container {
 #trainingCampsPage .imageGrid > img {
 	width: 225px;
 	height: 225px;
-	padding-top: 30px;
+	margin-top: 30px;
 }
 
 #homePage  .headerSection.slider {
@@ -821,4 +821,12 @@ h4.widgettitle {
   pointer-events: none;
   background-position: cover;
   background-image: url(../images/logo-background.png);
+}
+
+img.sliderImage
+img.coachOneImg,
+img.coachTwosImg,
+.trainingCampBody .imageGrid  img,
+.post-image img {
+	border-radius: 5px;
 }
