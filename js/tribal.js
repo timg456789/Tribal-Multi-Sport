@@ -73,7 +73,8 @@ $(function() {
 				'<img class="backToTop" src="../images/thin-chevron.png" alt="Back to Top Arrow" />' +
 			'</a>' +
 			'<div class="copyright">&#64;' + currentYear + ' TRIBAL Multi-Sport. All rights reserved.</div>' +
-		'</div>');
+		'</div>' + 
+		'<div id="logoOverlay"></div>');
 	
 	// Setup blog for styling.
 	var blogPostSubtitles = $("p.post-meta");

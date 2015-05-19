@@ -810,3 +810,15 @@ h4.widgettitle {
 .search-results #blogContentContainer {
 	padding-bottom: 90px;
 }
+
+#logoOverlay {
+  z-index: 1000;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 1000px;
+  height: 1000px;
+  pointer-events: none;
+  background-position: cover;
+  background-image: url(../images/logo-background.png);
+}
