@@ -823,7 +823,7 @@ h4.widgettitle {
   background-image: url(../images/logo-background.png);
 }
 
-img.sliderImage
+img.sliderImage,
 img.coachOneImg,
 img.coachTwosImg,
 .trainingCampBody .imageGrid  img,
