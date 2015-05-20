@@ -4,19 +4,19 @@ var imageSlider = function(configIn) {
 	this.config = configIn;
 
 	this.decrement = function() {
-		var possibleIndex = this.sliderIndex - 6;
+		var possibleIndex = this.sliderIndex - this.config.rowCount;
 		
 		if (possibleIndex >= 0) {
 			this.sliderIndex = possibleIndex;
 		} else {
-			this.sliderIndex = this.config.data.length - 6;
+			this.sliderIndex = this.config.data.length - this.config.rowCount;
 		}
 		
 		this.updateSlider();
 	}
 	
 	this.increment = function() {
-		var possibleIndex = this.sliderIndex + 6;
+		var possibleIndex = this.sliderIndex + this.config.rowCount;
 		
 		if (possibleIndex < this.config.data.length) {
 			
@@ -34,13 +34,13 @@ var imageSlider = function(configIn) {
 		$(this.config.selector).html(
 			'<div class="row">' +
 				'<div class="col-md-1">' +
-					'<img onclick="athleteSlider.decrement();" class="decrement" src="../images/thin-chevron-left.png" />' +
+					'<img onclick="imageSlider.decrement();" class="decrement" src="../images/thin-chevron-left.png" />' +
 				'</div>'+
 				'<div class="col-md-10">' +
 					sliderHtml +
 				'</div>' +
 				'<div class="col-md-1">' +
-					'<img onclick="athleteSlider.increment();" class="increment" src="../images/thin-chevron-right.png" />' +
+					'<img onclick="imageSlider.increment();" class="increment" src="../images/thin-chevron-right.png" />' +
 				'</div>'+
 
 			'</div>');

@@ -478,6 +478,13 @@ h1.container {
 	margin-top: 30px;
 }
 
+#homePage #socialSlider .increment,
+#homePage #socialSlider .decrement,
+#homePage #sponsorImages .increment,
+#homePage #sponsorImages .decrement {
+	display: none;
+}
+
 #homePage  .headerSection.slider {
 background: rgba(255, 255, 255, 0.8) url('../images/Home-Sliderbg.JPG') ;
 

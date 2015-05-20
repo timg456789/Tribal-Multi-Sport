@@ -7,8 +7,6 @@
 		<script src="../js/slider.js"></script>
 		<script src="../libraries/parallax.min.js"></script>
 		<script type="text/javascript">
-
-			
 			var sponsorsConfig = {
 				selector: "#sponsorImages",
 				rowCount: 1,
@@ -91,8 +89,11 @@
 			};
 		
 			$(function() {
-				updateSlider(sponsorsConfig);
-				updateSlider(socialConfig);
+				var sponsorSlider = new imageSlider(sponsorsConfig);
+				sponsorSlider.updateSlider();
+				
+				var socialSlider = new imageSlider(socialConfig);
+				socialSlider.updateSlider();
 			});
 		</script>
 	</head>
