@@ -75,8 +75,11 @@
 			]
 		};
 		
+		var athleteSlider;
+		
 		$(function() {
-			updateSlider(athleteConfig);
+			athleteSlider = new imageSlider(athleteConfig);
+			athleteSlider.updateSlider();
 		});
 	</script>
   </head>
