@@ -95,11 +95,20 @@ $(function() {
 	
 	$("#blogContentContainer").append(
 		$("#loops-wrapper"));
+		
+	$(".single-post #blogContentContainer").append(
+		$(".single-post .post"));
+	
+	$(".single-post #blogContentContainer").append(
+		$(".single-post #comments"));
 	
 	$("#blogContentContainer").append(
 		$("#sidebar"));
 		
 	$("#blogContentContainer").append(
 		$(".pagenav"));
-		
+	
+	$(".single-post #pagewrap #content").addClass("container");
+	
+	$(".single-post .comment-form #submit").addClass("btn");
 });

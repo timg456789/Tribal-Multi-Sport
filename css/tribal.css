@@ -698,7 +698,9 @@ h1.post-title a:hover {
 	margin-top: 90px;
 }
 
-#loops-wrapper {
+#loops-wrapper,
+.single-post .post,
+.single-post #comments {
 	float: left;
 	width: 75%;
 	margin-right: 5%;
@@ -836,4 +838,61 @@ img.coachTwosImg,
 .trainingCampBody .imageGrid  img,
 .post-image img {
 	border-radius: 5px;
+}
+
+.increment,
+.decrement {
+	cursor: pointer;
+}
+
+.post-content {
+	clear: left;
+	padding-top: 15px;
+}
+
+.post-content time {
+	padding-top: 5px;
+}
+
+#comments .avatar {
+	display: none;
+}
+
+.post-nav {
+	display: none;
+}
+
+.comment-title {
+	display: none;
+}
+
+.commentlist {
+	list-style-type: none;
+	background-image: url('../images/thin-chevron-left.png');
+	background-repeat: no-repeat;
+	padding-left: 3.7%;
+	background-size: 2.8%;
+	margin-top: 3%;
+}
+
+.single-post #pagewrap {
+	background-color: #02547a;
+}
+
+.single-post .post-image {
+	margin-top: 7%;
+}
+
+.single-post .comment-form label {
+	margin-left: 1.5%;
+	margin-bottom: 1%;
+}
+
+.single-post .comment-form input {
+	border-radius: 5px;
+}
+
+.single-post .comment-form #submit {
+	background-color: #009688;
+	margin-top: 2%;
 }
