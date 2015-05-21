@@ -919,3 +919,21 @@ img.coachTwosImg,
 	height: 90px;
 	width: 100%;
 }
+
+.triathlonCamp {
+	text-align: center;
+}
+
+.triathlonCamp .row > div {
+	padding-top: 2%;
+}
+
+.triathlonCamp .row {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.triathlonCamp .triathlonCampPoster {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
