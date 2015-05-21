@@ -78,7 +78,7 @@ body h3 {
 	margin-bottom: 60px;
 }
 
-body > .section:nth-last-child(3) {
+body > .section:nth-last-child(4) {
 	padding-bottom: 90px;
 }
 
@@ -383,6 +383,9 @@ h1.container {
 	text-align: left;
 }
 
+.page .contactUs,
+.single-post .contactUs,
+#trainingCampsPage .contactUs,
 #contactUsPage .contactUs {
 	display:none; /* Don't show the contact us link when in the contact us page. */
 }
@@ -809,10 +812,6 @@ h4.widgettitle {
 
 .pagenav a:nth-child(6),
 .pagenav a.number:nth-child(7)  {
-	display: none;
-}
-
-.contactUs {
 	display: none;
 }
 
