@@ -84,8 +84,8 @@ body > .section:nth-last-child(4) {
 
 .contactUs,
 .footer {
-		padding-top: 45px;
-		padding-bottom: 45px;
+		padding-top: 2.1%;
+		padding-bottom: 3%;
 }
 
 #navContainer.navbar-default {
@@ -637,6 +637,20 @@ background: rgba(255, 255, 255, 0.8) url('../images/Home-Sliderbg.JPG') ;
 #homePage #socialSlider img {
 	height: 180px;
 	width: 180px;
+	border-radius: 0;
+}
+
+#homePage #sponsorImages img {
+	border-radius: 0;
+}
+
+#homePage .social h2 {
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+
+#homePage #socialSlider > .row {
+	margin-top: 2%;
 }
 
 #homePage .viewSponsors {
@@ -894,4 +908,14 @@ img.coachTwosImg,
 .single-post .comment-form #submit {
 	background-color: #009688;
 	margin-top: 2%;
+}
+
+.contactUs .learnMore {
+	margin-bottom: 1.5%;
+}
+
+.social .facebook img,
+.social .twitter img {
+	height: 90px;
+	width: 100%;
 }
