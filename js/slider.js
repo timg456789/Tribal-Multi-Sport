@@ -44,6 +44,25 @@ var imageSlider = function(configIn) {
 				'</div>'+
 
 			'</div>');
+			
+		var maxLength = 300;
+			
+		$(".show-read-more").each(function(){
+			var myStr = $(this).text();
+			if($.trim(myStr).length > maxLength){
+				var newStr = myStr.substring(0, maxLength);
+				var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+				$(this).empty().html(
+					newStr +
+					'...<input class="read-more ancientGreen btn" type="button" value="Read More">' +
+					'<span class="more-text">' + removedStr + '</span>');
+			}
+		});
+		
+		$(".read-more").click(function(){
+			$(this).siblings(".more-text").contents().unwrap();
+			$(this).remove();
+		});
 	}
 	
 	this.getSliderHtml = function() {
@@ -88,7 +107,7 @@ var imageSlider = function(configIn) {
 		}
 		
 		if (sliderItemData.details) {
-			widgetHtml +=	'<div class="sliderDescription">' + sliderItemData.details + '</div>';
+			widgetHtml +=	'<div class="show-read-more sliderDescription">' + sliderItemData.details + '</div>';
 		}
 		
 		widgetHtml += '</div>';

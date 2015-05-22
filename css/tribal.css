@@ -953,3 +953,16 @@ img.coachTwosImg,
 .sliderDescription {
 	font-size: .9em;
 }
+
+.show-read-more .more-text{
+	display: none;
+}
+
+input.btn.read-more {
+	font-size: 1em;
+	margin-left: 3%;
+}
+
+.sliderName {
+	margin-top: 6%;
+}

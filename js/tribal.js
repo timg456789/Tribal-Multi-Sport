@@ -111,4 +111,5 @@ $(function() {
 	$(".single-post #pagewrap #content").addClass("container");
 	
 	$(".single-post .comment-form #submit").addClass("btn");
+	
 });
