@@ -920,8 +920,16 @@ img.coachTwosImg,
 	width: 100%;
 }
 
+.trainingCampBody  {
+	padding-bottom: 90px;
+}
+
 .triathlonCamp {
 	text-align: center;
+}
+
+.triathlonCamp p {
+	text-align: left;
 }
 
 .triathlonCamp .row > div {
@@ -936,4 +944,12 @@ img.coachTwosImg,
 .triathlonCamp .triathlonCampPoster {
 	padding-top: 3%;
 	padding-bottom: 3%;
+}
+
+#athletesPage .sliderDescription {
+	text-align: left;
+}
+
+.sliderDescription {
+	font-size: .9em;
 }
