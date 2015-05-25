@@ -16,7 +16,7 @@ $(function() {
 		'<nav class="mini-nav navbar navbar-default navbar-fixed-top">' +
 		  '<div class="container-fluid">' +
 			'<div class="navbar-header">' +
-			  '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">' +
+			  '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mini-nav-menu">' +
 				'<span class="icon-bar"></span>' +
 				'<span class="icon-bar"></span>' +
 				'<span class="icon-bar"></span>' +
@@ -29,7 +29,7 @@ $(function() {
 			'</div>' +
 
 			'<div class="collapse navbar-collapse" id="mini-nav-menu">' +
-			  '<ul id="mainNav" class="nav navbar-nav text-uppercase">' +
+			  '<ul class="nav navbar-nav text-uppercase">' +
 				'<li><a href="services.html">Services</a></li>' +
 				'<li><a href="athletes.html">Athletes</a></li>' +
 				'<li><a href="coaches.html">Coaches</a></li>' +
@@ -44,7 +44,7 @@ $(function() {
 		'<a href="index.html">' +
 			'<img src="../images/logo.jpg"' +
 				'alt="Tribal Multi-Sport Logo"' +
-				'class="img-responsive center-block" />' +
+				'class="header-logo  img-responsive center-block" />' +
 		'</a>' +
 
 		'<nav id="navContainer" class="navbar navbar-default">' +

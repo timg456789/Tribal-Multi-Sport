@@ -972,6 +972,19 @@ input.btn.read-more {
 	border: none;
 }
 
+.mini-nav-menu > ul.nav {
+	margin-top: 2%
+}
+
+.mini-nav-menu a > img {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+img.header-logo {
+	width: 86px;
+}
+
 .mini-nav {
 	background-color: white;
 	padding-top: 1%;
