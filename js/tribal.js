@@ -13,7 +13,7 @@ $(function() {
 	
 	$("body").prepend(
 	'<div id="topContainer" class="container">' +
-		'<nav id="navContainer" class="mini-nav navbar navbar-default navbar-fixed-top">' +
+		'<nav class="mini-nav navbar navbar-default navbar-fixed-top">' +
 		  '<div class="container-fluid">' +
 			'<div class="navbar-header">' +
 			  '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">' +
@@ -25,10 +25,10 @@ $(function() {
 				'<img src="../images/logo.jpg"' +
 					'alt="Tribal Multi-Sport Logo"' +
 					'class="img-responsive center-block" />' +
-			'</a>' +
+				'</a>' +
 			'</div>' +
 
-			'<div class="collapse navbar-collapse" id="navMenu">' +
+			'<div class="collapse navbar-collapse" id="mini-nav-menu">' +
 			  '<ul id="mainNav" class="nav navbar-nav text-uppercase">' +
 				'<li><a href="services.html">Services</a></li>' +
 				'<li><a href="athletes.html">Athletes</a></li>' +
@@ -139,5 +139,25 @@ $(function() {
 	$(".single-post #pagewrap #content").addClass("container");
 	
 	$(".single-post .comment-form #submit").addClass("btn");
+	
+	
+		
+		var $window = $(window);
+	var $stickyEl = $('#navContainer');
+	
+	if ($stickyEl.length > 0) {
+		var elTop = $stickyEl.offset().top;
+
+	   $window.scroll(function() {
+		   
+		   if ($window.scrollTop() > elTop) {
+			   $('.mini-nav').fadeIn();
+		   }else {
+			   $('.mini-nav').fadeOut();
+		   }
+		});
+	
+
+	}
 	
 });
