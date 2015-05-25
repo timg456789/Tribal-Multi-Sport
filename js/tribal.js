@@ -13,6 +13,34 @@ $(function() {
 	
 	$("body").prepend(
 	'<div id="topContainer" class="container">' +
+		'<nav id="navContainer" class="mini-nav navbar navbar-default navbar-fixed-top">' +
+		  '<div class="container-fluid">' +
+			'<div class="navbar-header">' +
+			  '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navMenu">' +
+				'<span class="icon-bar"></span>' +
+				'<span class="icon-bar"></span>' +
+				'<span class="icon-bar"></span>' +
+			  '</button>' +
+			  '<a href="index.html">' +
+				'<img src="../images/logo.jpg"' +
+					'alt="Tribal Multi-Sport Logo"' +
+					'class="img-responsive center-block" />' +
+			'</a>' +
+			'</div>' +
+
+			'<div class="collapse navbar-collapse" id="navMenu">' +
+			  '<ul id="mainNav" class="nav navbar-nav text-uppercase">' +
+				'<li><a href="services.html">Services</a></li>' +
+				'<li><a href="athletes.html">Athletes</a></li>' +
+				'<li><a href="coaches.html">Coaches</a></li>' +
+				'<li><a href="sponsors.html">Sponsors</a></li>' +
+				'<li><a href="training-camps.html">Training Camps</a></li>' +
+				'<li><a href="contact.html">Contact</a></li>' +
+				'<li><a href="blog.html">Blog</a></li>' +
+			  '</ul>' +
+			'</div>' +
+		  '</div>' +
+		'</nav>' +
 		'<a href="index.html">' +
 			'<img src="../images/logo.jpg"' +
 				'alt="Tribal Multi-Sport Logo"' +

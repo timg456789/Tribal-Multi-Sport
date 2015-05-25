@@ -966,3 +966,17 @@ input.btn.read-more {
 .sliderName {
 	margin-top: 6%;
 }
+
+#navMenu {
+	border: none;
+}
+
+#navContainer.mini-nav {
+	background-color: white;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+#navContainer.mini-nav a > img {
+	width: 60px;
+}
