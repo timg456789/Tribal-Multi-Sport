@@ -961,6 +961,7 @@ img.coachTwosImg,
 input.btn.read-more {
 	font-size: 1em;
 	margin-left: 3%;
+	margin-bottom: 10%;
 }
 
 .sliderName {
@@ -984,4 +985,15 @@ input.btn.read-more {
 
 .mini-nav.show {
 	display: inherit;
+}
+
+#slider .row > .col-md-1:first-child,
+#slider .row > .col-md-1:last-child {
+	margin-top: 50%;
+}
+
+
+#slider .row > .col-md-1:first-child img,
+#slider .row > .col-md-1:last-child  img{
+	width: 48px;
 }
