@@ -330,21 +330,6 @@ h1.container {
 	border-width: 3px;
 }
 
-.groupTrainingSection {
-	background-image: url(../images/group-bg.jpg);
-	background-size: cover;
-}
-
-.oneOnOneCoachingContent {
-	background-image: url(../images/one-on-one-bg.jpg);
-	background-size: cover;
-}
-
-.trainingPlans {
-	background-image: url(../images/personalized-bg.jpg);
-	background-size: cover;
-}
-
 #coachesPage h2.coachProfile{
 	padding-top: 0px;
 	margin-top: -8px;"
@@ -1000,13 +985,13 @@ img.header-logo {
 	display: inherit;
 }
 
-#slider .row > .col-md-1:first-child,
-#slider .row > .col-md-1:last-child {
-	margin-top: 50%;
-}
-
-
 #slider .row > .col-md-1:first-child img,
 #slider .row > .col-md-1:last-child  img{
 	width: 48px;
+}
+
+#slider > .row > div {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
 }
